@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalle de hábitos - WellCampus</title>
+    <link rel="stylesheet" href="/CSS/details-habits.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="home.html"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="habits.html" class="active"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="statistics.html"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="goals.html"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="profile.html"><span class="icon">👤</span> Perfil</a></li>
+                <li><a href="settings.html"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <header class="main-header">
+            <hgroup>
+                <h2>Detalle de hábitos</h2>
+                <p>Monitorea tu progreso en cada hábito</p>
+            </hgroup>
+            <button class="bell" aria-label="Notificaciones">🔔</button>
+        </header>
+
+        <nav class="tabs" aria-label="Categorías de hábitos">
+            <ul>
+                <li><a href="#actividad-fisica" class="tab active"><span class="icon">🏃</span> Actividad física</a></li>
+                <li><a href="#sueno" class="tab"><span class="icon">🌙</span> Sueño</a></li>
+                <li><a href="#hidratacion" class="tab"><span class="icon">💧</span> Hidratación</a></li>
+                <li><a href="#alimentacion" class="tab"><span class="icon">🍎</span> Alimentación</a></li>
+                <li><a href="#estres" class="tab"><span class="icon">🧠</span> Estrés</a></li>
+            </ul>
+        </nav>
+
+        <section class="habit-grid" id="actividad-fisica">
+            <article class="card habit-summary">
+                <h3>Actividad física</h3>
+                <p class="period">Esta semana</p>
+                <dl class="habit-stats">
+                    <div class="stat-row">
+                        <span class="stat-icon">👣</span>
+                        <dt class="label">Promedio diario</dt>
+                        <dd class="value"><strong>7.500</strong> pasos</dd>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-icon">🏔️</span>
+                        <dt class="label">Mejor día</dt>
+                        <dd class="value"><strong>12.500</strong> pasos</dd>
+                    </div>
+                    <div class="stat-row">
+                        <span class="stat-icon">🎯</span>
+                        <dt class="label">Meta diaria</dt>
+                        <dd class="value"><strong>8.000</strong> pasos</dd>
+                    </div>
+                </dl>
+            </article>
+
+            <article class="card chart-card">
+                <h3>Pasos diarios</h3>
+                <figure class="bar-chart">
+                    <ul class="bar-list">
+                        <li class="bar-item">
+                            <span class="bar" style="--value: 8000;" data-value="8.000"></span>
+                            <span class="bar-label">Lun</span>
+                        </li>
+                        <li class="bar-item">
+                            <span class="bar" style="--value: 6000;" data-value="6.000"></span>
+                            <span class="bar-label">Mar</span>
+                        </li>
+                        <li class="bar-item">
+                            <span class="bar" style="--value: 6500;" data-value="6.500"></span>
+                            <span class="bar-label">Mié</span>
+                        </li>
+                        <li class="bar-item">
+                            <span class="bar" style="--value: 6500;" data-value="6.500"></span>
+                            <span class="bar-label">Jue</span>
+                        </li>
+                        <li class="bar-item">
+                            <span class="bar" style="--value: 6000;" data-value="6.000"></span>
+                            <span class="bar-label">Vie</span>
+                        </li>
+                        <li class="bar-item">
+                            <span class="bar" style="--value: 8500;" data-value="8.500"></span>
+                            <span class="bar-label">Sáb</span>
+                        </li>
+                        <li class="bar-item">
+                            <span class="bar" style="--value: 3500;" data-value="3.500"></span>
+                            <span class="bar-label">Dom</span>
+                        </li>
+                    </ul>
+                    <figcaption class="visually-hidden">Pasos diarios de lunes a domingo</figcaption>
+                </figure>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>

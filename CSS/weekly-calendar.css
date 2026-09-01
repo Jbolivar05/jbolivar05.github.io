@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    font-family: 'Segoe UI', Arial, Helvetica, sans-serif;
+    background-color: #f4f6fb;
+    color: #1f2937;
+}
+.sidebar {
+    width: 260px;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #0b1f52 0%, #0a1840 100%);
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px 16px;
+    position: sticky;
+    top: 0;
+}
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 0 8px 24px 8px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-brand #logo {
+    width: 32px;
+    height: 32px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.sidebar-brand h1 {
+    font-size: 1.15rem;
+    font-weight: 700;
+    letter-spacing: 0.3px;
+}
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.sidebar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.sidebar nav a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 14px;
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 0.75);
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.sidebar nav a .icon {
+    font-size: 1.05rem;
+    width: 20px;
+    text-align: center;
+}
+
+.sidebar nav a:hover {
+    background-color: rgba(255, 255, 255, 0.08);
+    color: #ffffff;
+}
+
+.sidebar nav a.active {
+    background-color: #2952e3;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#list-down {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 12px;
+}
+
+body > section {
+    flex: 1;
+    padding: 32px 40px;
+    max-width: 1200px;
+}
+
+.section-header {
+    position: relative;
+    margin-bottom: 24px;
+}
+
+.section-header h2 {
+    font-size: 1.6rem;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+.section-header p {
+    color: #6b7280;
+    font-size: 0.95rem;
+}
+
+.section-header .icon {
+    position: absolute;
+    top: 4px;
+    right: 0;
+    font-size: 1.2rem;
+    cursor: pointer;
+    color: #6b7280;
+}
+
+.calendar-controls {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    padding: 14px 20px;
+}
+
+.today-btn {
+    padding: 8px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #374151;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.today-btn:hover {
+    background-color: #f4f6fb;
+}
+
+.prev-week,
+.next-week {
+    width: 32px;
+    height: 32px;
+    border: 1px solid #e5e7eb;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #374151;
+    font-size: 0.9rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.2s ease;
+}
+
+.prev-week:hover,
+.next-week:hover {
+    background-color: #f4f6fb;
+}
+
+.week-range {
+    font-size: 0.95rem;
+    font-weight: 600;
+    color: #1f2937;
+    flex: 1;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 4px;
+    background-color: #e9ecf6;
+    padding: 4px;
+    border-radius: 8px;
+}
+
+.view-toggle button {
+    padding: 6px 16px;
+    border: none;
+    border-radius: 6px;
+    background-color: transparent;
+    color: #6b7280;
+    font-size: 0.85rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.view-toggle button:hover {
+    color: #2952e3;
+}
+
+.view-toggle button.active {
+    background-color: #2952e3;
+    color: #ffffff;
+}
+
+.calendar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    overflow: hidden;
+}
+
+.calendar-table thead th {
+    padding: 16px 12px;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #6b7280;
+    background-color: #f9fafb;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.calendar-table tbody th {
+    padding: 16px 20px;
+    text-align: left;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #1f2937;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.calendar-table tbody th .icon {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: #dbeafe;
+    font-size: 0.95rem;
+}
+
+.calendar-table tbody td {
+    padding: 16px 12px;
+    text-align: center;
+    font-size: 0.85rem;
+    font-weight: 600;
+    color: #374151;
+}
+
+.calendar-table tbody tr {
+    border-bottom: 1px solid #f0f1f5;
+}
+
+.calendar-table tbody tr:last-child {
+    border-bottom: none;
+}
+
+.calendar-table tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+.calendar-table tbody tr:last-child td {
+    font-weight: 600;
+}
+
+
+@media (max-width: 900px) {
+    body {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        min-height: auto;
+        position: relative;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body > section {
+        padding: 20px;
+    }
+
+    .calendar-controls {
+        flex-wrap: wrap;
+    }
+
+    .week-range {
+        order: 3;
+        flex-basis: 100%;
+        text-align: center;
+    }
+
+    .calendar-table {
+        display: block;
+        overflow-x: auto;
+        white-space: nowrap;
+    }
+
+    .calendar-table thead,
+    .calendar-table tbody {
+        display: table;
+        width: 100%;
+    }
+}

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio</title>
+    <link rel="stylesheet" href="/CSS/home.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="/HTML/home.html" class="active"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="/HTML/habits.html"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="/HTML/statistics.html"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="/HTML/goals.html"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="/HTML/notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="/HTML/profile.html"><span class="icon">👤</span> Perfil</a></li>
+                <li><a href="/HTML/settings.html"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+            <ul id="list-down">
+                <li><a href="/HTML/login.html" id="btn-logout"><span class="icon">🚪</span> Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main>
+        <header class="section-header">
+            <div>
+                <h2 id="user-greeting">¡Hola! 👋</h2>
+                <p>Resumen de tu bienestar hoy</p>
+            </div>
+            <div class="header-right">
+                <time datetime="2025-05-13">Martes, 13 de mayo de 2025</time>
+                <span class="icon">🔔</span>
+                <img src="/img/perrocongafas.jpg" alt="Foto de perfil de Javier" class="avatar">
+            </div>
+        </header>
+
+        <section class="dashboard-top">
+            <article class="wellness-score">
+                <h3>Puntuación de bienestar</h3>
+                <p class="score">86 <span>de 100</span></p>
+                <p class="score-message">¡Vas por buen camino!</p>
+            </article>
+
+            <article class="weekly-progress">
+                <h3>Tu progreso esta semana</h3>
+            </article>
+        </section>
+
+        <section class="habits-summary">
+            <h3>Resumen de hábitos</h3>
+
+            <article class="habits">
+                <span class="icon">🏃</span>
+                <h4>Actividad física</h4>
+                <p id="home-valor-pasos">7.500 pasos</p>
+                <span>Meta: 10.000 pasos</span>
+                <progress id="home-progress-pasos" value="7500" max="10000"></progress>
+            </article>
+            <article class="habits">
+                <span class="icon">🌙</span>
+                <h4>Sueño</h4>
+                <p id="home-valor-sueno">7.2 horas</p>
+                <span>Meta: 8 horas</span>
+                <progress id="home-progress-sueno" value="7.2" max="8"></progress>
+            </article>
+            <article class="habits">
+                <span class="icon">💧</span>
+                <h4>Hidratación</h4>
+                <p id="home-valor-agua">6 vasos</p>
+                <span>Meta: 8 vasos</span>
+                <progress id="home-progress-agua" value="6" max="8"></progress>
+            </article>
+            <article class="habits">
+                <span class="icon">🍽️</span>
+                <h4>Alimentación</h4>
+                <p id="home-valor-alimentacion">3 raciones</p>
+                <span>Meta: 5 raciones</span>
+                <progress id="home-progress-alimentacion" value="3" max="5"></progress>
+            </article>
+            <article class="habits">
+                <span class="icon">🧠</span>
+                <h4>Estrés</h4>
+                <p id="home-valor-estres">Bajo</p>
+                <span>Estado actual</span>
+            </article>
+        </section>
+
+        <section class="reminders">
+            <h3>Próximos recordatorios</h3>
+
+            <article>
+                <span class="icon">💧</span>
+                <div>
+                    <h4>Beber agua</h4>
+                    <span>En 1 hora</span>
+                </div>
+            </article>
+            <article>
+                <span class="icon">🏃</span>
+                <div>
+                    <h4>Entrenamiento</h4>
+                    <span>En 2 horas</span>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <script src="/JS/storage.js"></script>
+    <script src="/JS/home.js"></script>
+</body>
+</html>

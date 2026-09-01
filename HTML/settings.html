@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuración</title>
+    <link rel="stylesheet" href="/CSS/settings.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="home.html"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="habits.html"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="statistics.html"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="goals.html"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="profile.html"><span class="icon">👤</span> Perfil</a></li>
+                <li><a href="settings.html" class="active"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section>
+        <header class="section-header">
+            <h2>Configuración</h2>
+            <p>Personaliza tu experiencia</p>
+            <span class="icon">⛶</span>
+        </header>
+
+        <div class="settings-layout">
+            <nav class="settings-tabs">
+                <ul>
+                    <li><a href="" class="active"><span class="icon">👤</span> Cuenta</a></li>
+                    <li><a href=""><span class="icon">🔔</span> Notificaciones</a></li>
+                    <li><a href=""><span class="icon">⚙️</span> Preferencias</a></li>
+                    <li><a href=""><span class="icon">🔒</span> Privacidad</a></li>
+                    <li><a href=""><span class="icon">🛡️</span> Seguridad</a></li>
+                    <li><a href=""><span class="icon">🔗</span> Conexiones</a></li>
+                </ul>
+            </nav>
+
+            <section class="settings-content">
+                <h3>Información de cuenta</h3>
+
+                <form action="" method="post">
+                    <div class="form-group">
+                        <label for="correo">Correo electrónico</label>
+                        <div class="input-with-action">
+                            <input type="email" id="correo" name="correo" value="javier.bolivar@unisimon.edu.co" readonly>
+                            <a href="" class="change-link">Cambiar</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="contrasena">Contraseña</label>
+                        <div class="input-with-action">
+                            <input type="password" id="contrasena" name="contrasena" value="********" readonly>
+                            <a href="" class="change-link">Cambiar</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="idioma">Idioma</label>
+                        <select id="idioma" name="idioma">
+                            <option value="es">Español</option>
+                            <option value="en">Inglés</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="zona-horaria">Zona horaria</label>
+                        <select id="zona-horaria" name="zona-horaria">
+                            <option value="gmt-5">(GMT-05:00) Bogotá, Lima, Quito</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group danger-zone">
+                        <span>Eliminar cuenta</span>
+                        <a href="" class="delete-account-link">Eliminar mi cuenta permanentemente <span class="icon">›</span></a>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </section>
+</body>
+</html>

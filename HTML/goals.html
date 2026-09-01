@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metas</title>
+    <link rel="stylesheet" href="/CSS/goals.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="home.html"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="habits.html"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="statistics.html"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="goals.html" class="active"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="profile.html"><span class="icon">👤</span> Perfil</a></li>
+            </ul>
+            <ul id="list-down">
+                <li><a href="settings.html"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <div class="goals-header">
+            <div>
+                <h2>Metas</h2>
+                <p>Define y gestiona tus metas personales</p>
+            </div>
+            <button type="button" class="goals">Nueva meta</button>
+        </div>
+
+        <nav class="goals-tabs">
+            <ul>
+                <li><a href="#" class="active">Metas Activas</a></li>
+                <li><a href="#">Historial de metas</a></li>
+            </ul>
+        </nav>
+
+        <div class="goals-list">
+            <article class="goal-card">
+                <span class="icon">🚶</span>
+                <h2>Caminar 10000 pasos diarios</h2>
+                <p>8000/10000 pasos</p>
+                <progress value="8000" max="10000"></progress>
+                <span class="percent">80%</span>
+                <span class="due-date">Fecha límite: 30 May 2025</span>
+            </article>
+
+            <article class="goal-card">
+                <span class="icon">😴</span>
+                <h2>Dormir 8 horas diarias</h2>
+                <p>7.3/8 horas</p>
+                <progress value="7.3" max="8"></progress>
+                <span class="percent">91%</span>
+                <span class="due-date">Fecha límite: 30 May 2025</span>
+            </article>
+
+            <article class="goal-card">
+                <span class="icon">💧</span>
+                <h2>Beber 8 vasos de agua al día</h2>
+                <p>6/8 vasos</p>
+                <progress value="6" max="8"></progress>
+                <span class="percent">75%</span>
+                <span class="due-date">Fecha límite: 30 May 2025</span>
+            </article>
+
+            <article class="goal-card">
+                <span class="icon">🍎</span>
+                <h2>Comer 5 porciones de frutas y verduras</h2>
+                <p>3/5 porciones</p>
+                <progress value="3" max="5"></progress>
+                <span class="percent">60%</span>
+                <span class="due-date">Fecha límite: 30 May 2025</span>
+            </article>
+
+            <article class="goal-card">
+                <span class="icon">🧘</span>
+                <h2>Reducir el estrés</h2>
+                <p>Meta nivel bajo</p>
+                <progress value="2" max="3"></progress>
+                <span class="percent">70%</span>
+                <span class="due-date">Fecha límite: 30 May 2025</span>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

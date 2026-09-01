@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrar Hábito</title>
+    <link rel="stylesheet" href="/CSS/reg-habits.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="home.html"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="habits.html" class="active"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="statistics.html"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="goals.html"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="profile.html"><span class="icon">👤</span> Perfil</a></li>
+                <li><a href="settings.html"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section>
+        <header class="section-header">
+            <h2>Registrar nuevo hábito</h2>
+            <p>Agrega información sobre tu hábito</p>
+            <span class="icon">🔔</span>
+        </header>
+
+        <nav class="habit-tabs">
+            <ul>
+                <li><a href="" class="active"><span class="icon">🏃</span> Actividad física</a></li>
+                <li><a href=""><span class="icon">🌙</span> Sueño</a></li>
+                <li><a href=""><span class="icon">💧</span> Hidratación</a></li>
+                <li><a href=""><span class="icon">🍽️</span> Alimentación</a></li>
+                <li><a href=""><span class="icon">🧠</span> Estrés</a></li>
+            </ul>
+        </nav>
+
+        <form action="" method="post">
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="fecha">Fecha</label>
+                    <input type="date" id="fecha" name="fecha">
+                </div>
+
+                <div class="form-group">
+                    <label for="pasos">Pasos realizados</label>
+                    <input type="number" id="pasos" name="pasos" placeholder="pasos">
+                </div>
+
+                <div class="form-group">
+                    <label for="tipo-actividad">Tipo de actividad</label>
+                    <select id="tipo-actividad" name="tipo-actividad">
+                        <option value="caminar">Caminar</option>
+                        <option value="correr">Correr</option>
+                        <option value="ciclismo">Ciclismo</option>
+                        <option value="natacion">Natación</option>
+                        <option value="gimnasio">Gimnasio</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="duracion">Duración</label>
+                    <input type="number" id="duracion" name="duracion" placeholder="minutos">
+                </div>
+
+                <div class="form-group">
+                    <label for="calorias">Calorías quemadas (aprox.)</label>
+                    <input type="number" id="calorias" name="calorias" placeholder="kcal">
+                </div>
+
+                <div class="form-group">
+                    <label for="notas">Notas (opcional)</label>
+                    <textarea id="notas" name="notas" placeholder="Buen día para caminar en la universidad."></textarea>
+                </div>
+            </div>
+
+            <button type="submit" class="save-habit">Guardar registro</button>
+        </form>
+    </section>
+</body>
+</html>

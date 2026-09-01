@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estadisticas</title>
+    <link rel="stylesheet" href="/CSS/statistics.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="home.html"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="habits.html"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="statistics.html" class="active"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="goals.html"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="profile.html"><span class="icon">👤</span> Perfil</a></li>
+            </ul>
+            <ul id="list-down">
+                <li><a href="settings.html"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="content">
+        <nav class="tabs">
+            <ul>
+                <li><a href="#" class="active">Resumen</a></li>
+                <li><a href="#">Actividad Física</a></li>
+                <li><a href="#">Sueño</a></li>
+                <li><a href="#">Hidratación</a></li>
+                <li><a href="#">Alimentación</a></li>
+                <li><a href="#">Estrés</a></li>
+            </ul>
+        </nav>
+
+        <div class="stats-grid">
+            <div class="stats-left">
+                <div class="summary-cards">
+                    <article class="stat-card">
+                        <span class="icon">⭐</span>
+                        <strong class="value">82 <span>de 100</span></strong>
+                        <h3>Puntuación promedio</h3>
+                    </article>
+                    <article class="stat-card">
+                        <span class="icon">✅</span>
+                        <strong class="value">24 <span>de 30</span></strong>
+                        <h3>Días completados</h3>
+                    </article>
+                    <article class="stat-card">
+                        <span class="icon">🔥</span>
+                        <strong class="value">12 <span>días</span></strong>
+                        <h3>Mejor racha</h3>
+                    </article>
+                </div>
+
+                <article class="habits-distribution">
+                    <h2>Distribución de hábitos</h2>
+                    <canvas id="habitsDonutChart"></canvas>
+                    <ul>
+                        <li><span class="dot"></span>Actividad física — 78%</li>
+                        <li><span class="dot"></span>Sueño — 65%</li>
+                        <li><span class="dot"></span>Hidratación — 82%</li>
+                        <li><span class="dot"></span>Alimentación — 70%</li>
+                        <li><span class="dot"></span>Estrés — 55%</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="stats-right">
+                <article class="wellness-chart">
+                    <header>
+                        <hgroup>
+                            <h2>Evolución de tu bienestar</h2>
+                        </hgroup>
+                        <menu>
+                            <li><button type="button" aria-pressed="true">7 días</button></li>
+                            <li><button type="button" aria-pressed="false">30 días</button></li>
+                            <li><button type="button" aria-pressed="false">3 meses</button></li>
+                            <li><button type="button" aria-pressed="false">Personalizado</button></li>
+                        </menu>
+                    </header>
+                    <figure class="chart-container">
+                        <canvas id="bienestarChart"></canvas>
+                        <figcaption class="sr-only">Gráfico de evolución del bienestar</figcaption>
+                    </figure>
+                </article>
+
+                <article class="recent-achievements">
+                    <h2>Logros recientes</h2>
+                    <div class="achievement-item">
+                        <span class="icon">🏆</span>
+                        <p>Racha de 7 días</p>
+                    </div>
+                    <div class="achievement-item">
+                        <span class="icon">💧</span>
+                        <p>Hidratación constante</p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </main>
+</body>
+</html>

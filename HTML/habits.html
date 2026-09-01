@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Habitos</title>
+    <link rel="stylesheet" href="/CSS/habits.css">
+</head>
+<body>
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="/HTML/home.html"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="/HTML/habits.html" class="active"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="/HTML/statistics.html"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="/HTML/goals.html"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="/HTML/notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="/HTML/profile.html"><span class="icon">👤</span> Perfil</a></li>
+                <li><a href="/HTML/settings.html"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+            <ul id="list-down">
+                <li><a href="/HTML/login.html" id="btn-logout"><span class="icon">🚪</span> Cerrar sesión</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <section class="main-content">
+        <header class="section-header">
+            <div>
+                <h1>Registro de habitos</h1>
+                <p>Registrar tus habitos diarios</p>
+            </div>
+        </header>
+
+        <article class="record">
+            <span class="icon">🏃</span>
+            <div class="record-info">
+                <h2>Actividad Física</h2>
+                <p>de 10000 pasos</p>
+            </div>
+            <progress id="progress-pasos" value="7500" max="10000"></progress>
+            <span class="record-value" id="valor-pasos">7500 pasos</span>
+            <button type="button" data-habit="pasos" class="button-habits">REGISTRAR</button>
+        </article>
+
+        <article class="record">
+            <span class="icon">🌙</span>
+            <div class="record-info">
+                <h2>Sueño</h2>
+                <p>de 8 horas</p>
+            </div>
+            <progress id="progress-sueno" value="7.2" max="8"></progress>
+            <span class="record-value" id="valor-sueno">7.2 horas</span>
+            <button type="button" data-habit="sueno" class="button-habits">REGISTRAR</button>
+        </article>
+
+        <article class="record">
+            <span class="icon">💧</span>
+            <div class="record-info">
+                <h2>Hidratación</h2>
+                <p>de 8 vasos</p>
+            </div>
+            <progress id="progress-agua" value="6" max="8"></progress>
+            <span class="record-value" id="valor-agua">6 vasos</span>
+            <button type="button" data-habit="agua" class="button-habits">REGISTRAR</button>
+        </article>
+
+        <article class="record">
+            <span class="icon">🍽️</span>
+            <div class="record-info">
+                <h2>Alimentación</h2>
+                <p>de 5 raciones</p>
+            </div>
+            <progress id="progress-alimentacion" value="3" max="5"></progress>
+            <span class="record-value" id="valor-alimentacion">3 raciones</span>
+            <button type="button" data-habit="alimentacion" class="button-habits">REGISTRAR</button>
+        </article>
+
+        <fieldset class="habit-row">
+            <legend class="habit-info">
+                <span class="icon">🔥</span>
+                <span class="habit-name">Estrés</span>
+                <span class="habit-status" id="estado-estres">Bajo</span>
+            </legend>
+
+            <ul class="stress-options">
+                <li>
+                    <label class="radio-option">
+                    <input type="radio" name="estres" value="bajo" checked>Bajo</label>
+                </li>
+                <li>
+                    <label class="radio-option">
+                    <input type="radio" name="estres" value="moderado">Moderado</label>
+                </li>
+                <li>
+                    <label class="radio-option">
+                    <input type="radio" name="estres" value="alto">Alto</label>
+                </li>
+            </ul>
+
+            <button class="btn-registrar" type="button" id="btn-registrar-estres">Registrar</button>
+        </fieldset>
+    </section>
+
+    <script src="/JS/storage.js"></script>
+    <script src="/JS/habits.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil - WellCampus</title>
+    <link rel="stylesheet" href="/CSS/profile.css">
+</head>
+<body>
+
+    <aside class="sidebar">
+        <header class="sidebar-brand">
+            <img src="/img/logo-wellcampus.svg" id="logo" alt="logo wellCampus">
+            <h1>WellCampus</h1>
+        </header>
+        <nav>
+            <ul id="list-up">
+                <li><a href="home.html"><span class="icon">🏠</span> Inicio</a></li>
+                <li><a href="habits.html"><span class="icon">✔️</span> Hábitos</a></li>
+                <li><a href="statistics.html"><span class="icon">📊</span> Estadísticas</a></li>
+                <li><a href="goals.html"><span class="icon">🎯</span> Metas</a></li>
+                <li><a href="notifications.html"><span class="icon">🔔</span> Notificaciones</a></li>
+                <li><a href="profile.html" class="active"><span class="icon">👤</span> Perfil</a></li>
+                <li><a href="settings.html"><span class="icon">⚙️</span> Configuración</a></li>
+            </ul>
+        </nav>
+    </aside>
+
+    <main class="main">
+        <header class="main-header">
+            <hgroup>
+                <h2>Mi perfil</h2>
+                <p>Gestiona tu información personal</p>
+            </hgroup>
+            <button class="bell" aria-label="Notificaciones">🔔</button>
+        </header>
+
+        <section class="top-grid">
+            <article class="card profile-card">
+                <figure>
+                    <img class="avatar" src="https://i.pravatar.cc/150?img=12" alt="Foto de perfil">
+                </figure>
+                <h3>Javier Bolivar</h3>
+                <p class="email">javier.bolivar@unisimon.edu.co</p>
+                <p class="role">Estudiante de Ingeniería de Sistemas<br>Universidad Simón Bolívar</p>
+                <button class="edit-btn">Editar perfil</button>
+            </article>
+
+            <article class="card info-card">
+                <h4>Información personal</h4>
+                <dl>
+                    <div class="info-row">
+                        <dt class="label">Nombre completo</dt>
+                        <dd class="value">Javier Enrique Bolivar Ronajo</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt class="label">Fecha de nacimiento</dt>
+                        <dd class="value">15/04/2002</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt class="label">Género</dt>
+                        <dd class="value">Masculino</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt class="label">Altura</dt>
+                        <dd class="value">175 cm</dd>
+                    </div>
+                    <div class="info-row">
+                        <dt class="label">Peso</dt>
+                        <dd class="value">70 kg</dd>
+                    </div>
+                </dl>
+            </article>
+        </section>
+
+        <section class="bottom-grid">
+            <article class="card">
+                <h4>Resumen personal</h4>
+                <ul class="stat-list">
+                    <li class="stat-row">
+                        <span class="stat-icon">📅</span>
+                        <span class="stat-label">Miembro desde</span>
+                        <span class="stat-value">Mayo 2025</span>
+                    </li>
+                    <li class="stat-row">
+                        <span class="stat-icon">⭐</span>
+                        <span class="stat-label">Puntuación promedio</span>
+                        <span class="stat-value">82 de 100</span>
+                    </li>
+                    <li class="stat-row">
+                        <span class="stat-icon">🔥</span>
+                        <span class="stat-label">Mejor racha</span>
+                        <span class="stat-value">12 días</span>
+                    </li>
+                </ul>
+            </article>
+
+            <article class="card">
+                <h4>Preferencias</h4>
+                <ul class="stat-list">
+                    <li class="stat-row">
+                        <span class="stat-icon">🔔</span>
+                        <span class="stat-label">Recordatorios</span>
+                        <span class="stat-value">Activados</span>
+                    </li>
+                    <li class="stat-row">
+                        <span class="stat-icon">🌙</span>
+                        <span class="stat-label">Hora de dormir</span>
+                        <span class="stat-value">22:30</span>
+                    </li>
+                    <li class="stat-row">
+                        <span class="stat-icon">📏</span>
+                        <span class="stat-label">Unidad de medida</span>
+                        <span class="stat-value">Métrico (kg, cm)</span>
+                    </li>
+                </ul>
+            </article>
+        </section>
+    </main>
+
+</body>
+</html>
